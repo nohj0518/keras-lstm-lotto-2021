@@ -4,6 +4,7 @@ from keras_lstm_lotto_968_ipynb import get_list_num
 
 
 app = Flask("SuperScrapper")
+numbers = []
 
 
 @app.route("/")  # @는 데코레이터 /는 root
