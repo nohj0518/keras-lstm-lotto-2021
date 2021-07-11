@@ -17,6 +17,7 @@ def home():  # 바로 아래 있는 함수를 찾아 실행해줌
 
 @app.route("/report")
 def report():
+    get_csv()
     numbers = get_list_num()
     return render_template("report.html", numbers=numbers)
 

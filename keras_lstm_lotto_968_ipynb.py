@@ -10,7 +10,8 @@ Original file is located at
 
 import numpy as np
 
-rows = np.loadtxt("./lotto.csv", delimiter=",")
+# rows = np.loadtxt("./lotto.csv", delimiter=",")
+rows = np.loadtxt("./keras_lstm_lotto_data.csv", delimiter=",")
 row_count = len(rows)
 print(row_count)
 
