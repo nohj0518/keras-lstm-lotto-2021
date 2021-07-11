@@ -9,16 +9,12 @@
   <body>
     <h1>Hi!😎 This is lotto number report page.</h1>
     <section>
-      <h4>Title</h4>
-      <h4>Company</h4>
-      <h4>Location</h4>
-      <h4>Link</h4>
-      {% for job in jobs%}
-      <span>{{job.title}}</span>
-      <span>{{job.company}}</span>
-      <span>{{job.location}}</span>
-      <a href="{{job.link}}" target="_blank">Apply</a>
-      {% endfor %}
+      <h4>numberlist</h4>
+      <ul>
+        {% for num in numbers%}
+        <li>{{num}}</li>
+        {% endfor %}
+      </ul>
     </section>
   </body>
 </html>

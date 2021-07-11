@@ -91,8 +91,9 @@ def Crawler(s_count, e_count, fp):
         fp.write(line)
 
 
-last = GetLast()  # 마지막 회차를 가져옴
+def get_csv():
+    last = GetLast()  # 마지막 회차를 가져옴
 
-fp = open("keras_lstm_lotto_data.csv", "w")
-Crawler(1, last, fp)  # 처음부터 마지막 회차까지 저장
-fp.close()
+    fp = open("keras_lstm_lotto_data.csv", "w")
+    Crawler(1, last, fp)  # 처음부터 마지막 회차까지 저장
+    fp.close()

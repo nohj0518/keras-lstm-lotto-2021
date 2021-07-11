@@ -10,7 +10,7 @@ Original file is located at
 
 import numpy as np
 
-rows = np.loadtxt("./keras_lstm_lotto_data.csv", delimiter=",")
+rows = np.loadtxt("./lotto.csv", delimiter=",")
 row_count = len(rows)
 print(row_count)
 
@@ -389,4 +389,8 @@ for n in range(10):
 
 - 참고 문헌: 김태영님 블로그(https://tykimos.github.io/2020/01/25/keras_lstm_lotto_v895/)
 """
+
+
+def get_list_num():
+    return list_numbers
 

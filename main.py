@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, send_file
-import scrapping
-import keras_lstm_lotto_968_ipynb
+from scrapping import get_csv
+from keras_lstm_lotto_968_ipynb import get_list_num
 
 
 app = Flask("SuperScrapper")
@@ -16,7 +16,8 @@ def home():  # 바로 아래 있는 함수를 찾아 실행해줌
 
 @app.route("/report")
 def report():
-    return render_template("report.html")
+    numbers = get_list_num()
+    return render_template("report.html", numbers=numbers)
 
 
 app.run()
